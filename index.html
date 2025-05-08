@@ -1,40 +1,225 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>허예슬의 블로그</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>블린이 블로그</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background-color: #f0f8ff;
+      color: #333;
+    }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
 
-        header, footer {
-            background-color: skyblue;
-            padding: 10px;
-        }
+    nav {
+      background-color: #3b82f6;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
 
-        article {
-            margin-top: 20px;
-        }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 8px;
-        }
-    </style>
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    /* 홈 */
+    .menu-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      font-size: 1.1rem;
+    }
+
+    /* 주인소개 */
+    .intro-message {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    .image-row img {
+      width: 23%;
+      border-radius: 8px;
+    }
+
+    /* 최신글 */
+    .post {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    textarea, input[type="text"] {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1d4ed8;
+    }
+
+    .form-section {
+      background-color: #e5efff;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
 
- 
-    
+  <header>
+    <h1>블린이 블로그</h1>
+  </header>
+
+  <nav>
+    <a href="#home">홈</a>
+    <a href="#intro">주인소개</a>
+    <a href="#posts">최신글</a>
+    <a href="#message">메세지 남기기</a>
+  </nav>
+
+  <div class="container">
+    <!-- 홈 -->
+    <section id="home" class="section">
+      <h2>홈</h2>
+      <div class="menu-list">
+        <a href="#intro">주인소개 보러가기</a>
+        <a href="#posts">최신글 보러가기</a>
+        <a href="#message">메세지 남기기</a>
+      </div>
+    </section>
+
+    <!-- 주인소개 -->
+    <section id="intro" class="section">
+      <h2>주인소개</h2>
+      <div class="intro-message">
+        블록체인에 대해 배워가고 있는 블린이
+        공부한 내용과 좋아하는 것들에 대해 포스팅 합니다<br>
+        
+      </div>
+      <div class="image-row">
+        <img src="https://postfiles.pstatic.net/MjAyNTA0MzBfMjAw/MDAxNzQ2MDAyODA1NTM5.Gom-D7bWQ4hrekxtFzMYmzYX72KdSD8KJdcmdM3KEI4g.a4HiXKCRq6kwRkzjPd_gSCiv8FxD4s4oulQ8r5n9AAAg.PNG/image.png?type=w3840" alt="이미지1" width="100" height="100"/>
+        <img src="https://media.istockphoto.com/id/576583816/ko/%EC%82%AC%EC%A7%84/%EB%A1%A0%EB%A6%AC-%EC%BA%A0%ED%8D%BC-%EC%96%B8%EB%8D%94-%EC%97%90-%EC%9D%80%ED%95%98%EC%88%98-%EC%97%90-%EB%A7%88%ED%85%8C%ED%98%B8%EB%A5%B8.jpg?s=612x612&w=0&k=20&c=NEFHdIWuTroL63Y4j5x1UtflXzke3UpAAne7ADfVhmo=" alt="이미지2" width="100" height="100"/>
+        <img src="https://postfiles.pstatic.net/MjAyNTA0MjlfMjk5/MDAxNzQ1OTE4NjM2Mjk5.WwgC5_gvieYI0gy5BHzmHjxSj0KwjYplnchG0yGXdQ4g.z3l8i1rljgXfodoVhWq97jZnftt4t1prOZwvCQPGdj4g.PNG/image.png?type=w3840" alt="이미지3" width="100" height="100"/>
+        <img src="https://previews.123rf.com/images/sofiaworld/sofiaworld1401/sofiaworld140100001/31339212-%ED%94%BC%ED%81%AC%EB%8B%89.jpg" alt="이미지4" width="100" height="100"/>
+      </div>
+    </section>
+
+    <!-- 최신글 -->
+    <section id="posts" class="section">
+      <h2>최신글</h2>
+      <article>
+        <h3>웹이란 무엇인가</h3>
+        <p>
+            1. HTML (HyperText Markup Language) 
+            " 웹페이지의 뼈대 "
+            우리가 인터넷에서 보는 모든 웹사이트(글, 사진, 버튼 등)는 HTML로 만들어져 있다 
+            HTML혼자 하는게 아니라 CSS, JS(Javascript)랑 같이 움직인다
+            HTML로 구조를 만들고,  CSS로 외형을 이쁘게 꾸며주고, JS로 기능을 추가해준다
+        </p>
+      </article>
+      <article>
+        <h3>지갑생성하고 faucet 받아보기 (feat.ZKcandy)</h3>
+        <p>
+            수업시간에 메타마스크를 통해 지갑을 생성하고, KAIA faucet을 받아서 트랜잭션 해보는 실습을 해보고 
+            다른지갑, 다른 코인으로 트랜잭션 해본 나의 후기            
+        </p>
+        <article>
+        <h3>블록체인의 합의방식과 'The Merge'</h3>
+        <p>
+            블록체인의 주요 합의 방식은 3가지가 있다. (합의 알고리즘은 여러가지가 있으나 대표적인 3가지만 정리)
+            PoW (Proof of Work, 작업증명), PoS (Proof of Stake, 지분증명), DPoS (Delegated Proof of Stake, 위임지분증명)
+        </p>
+      </article>
+      <div id="post-list">
+        <!-- 게시글이 여기에 추가됨 -->
+      </div>
+
+      <div class="form-section">
+        <h3>글쓰기</h3>
+        <input type="text" id="postTitle" placeholder="제목 입력" />
+        <textarea id="postContent" rows="4" placeholder="내용 입력"></textarea>
+        <button onclick="addPost()">작성 완료</button>
+      </div>
+    </section>
+
+    <!-- 메세지 남기기 -->
+    <section id="message" class="section">
+      <h2>메세지 남기기</h2>
+      <div class="form-section">
+        <input type="text" placeholder="이름 입력" />
+        <textarea rows="4" placeholder="메세지를 입력하세요."></textarea>
+        <button>Send</button>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function addPost() {
+      const title = document.getElementById('postTitle').value;
+      const content = document.getElementById('postContent').value;
+      if (!title || !content) {
+        alert("제목과 내용을 모두 입력해주세요.");
+        return;
+      }
+
+      const postList = document.getElementById('post-list');
+      const newPost = document.createElement('div');
+      newPost.className = 'post';
+      newPost.innerHTML = `<h3>${title}</h3><p>${content}</p>`;
+      postList.prepend(newPost);
+
+      // 최신글 3개까지만 표시
+      const posts = postList.querySelectorAll('.post');
+      if (posts.length > 3) {
+        postList.removeChild(posts[posts.length - 1]);
+      }
+
+      document.getElementById('postTitle').value = '';
+      document.getElementById('postContent').value = '';
+    }
+  </script>
+
 </body>
 </html>
+
