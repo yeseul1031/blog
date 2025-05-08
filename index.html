@@ -103,6 +103,17 @@
       padding: 1rem;
       border-radius: 8px;
     }
+    .post-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    }
+
+    .post-link:hover .post {
+     background-color: #dbeafe; /* hover 시 약간 밝은 파랑으로 */
+     transition: background-color 0.3s ease;
+    }
+
   </style>
 </head>
 <body>
@@ -149,6 +160,8 @@
     <section id="posts" class="section">
       <h2>최신글</h2>
       <article>
+        <a href="https://blog.naver.com/hysing/223851360596" target="_blank" class="post-link">
+            <article class="post">
         <h3>웹이란 무엇인가</h3>
         <p>
             1. HTML (HyperText Markup Language) 
@@ -158,22 +171,32 @@
             HTML로 구조를 만들고,  CSS로 외형을 이쁘게 꾸며주고, JS로 기능을 추가해준다
         </p>
       </article>
+      </a>
+
       <hr>
       <article>
+        <a href="https://blog.naver.com/hysing/223850241573" target="_blank" class="post-link">
+            <article class="post">
         <h3>지갑생성하고 faucet 받아보기 (feat.ZKcandy)</h3>
         <p>
             수업시간에 메타마스크를 통해 지갑을 생성하고, KAIA faucet을 받아서 트랜잭션 해보는 실습을 해보고 
             다른지갑, 다른 코인으로 트랜잭션 해본 나의 후기            
         </p>
         </article>
+        </a>
+
         <hr>
         <article>
+        <a href="hhttps://blog.naver.com/hysing/223848926926" target="_blank" class="post-link">
+            <article class="post">
         <h3>블록체인의 합의방식과 'The Merge'</h3>
         <p>
             블록체인의 주요 합의 방식은 3가지가 있다. (합의 알고리즘은 여러가지가 있으나 대표적인 3가지만 정리)
             PoW (Proof of Work, 작업증명), PoS (Proof of Stake, 지분증명), DPoS (Delegated Proof of Stake, 위임지분증명)
         </p>
       </article>
+      </a>
+      
       <div id="post-list">
         <!-- 게시글이 여기에 추가됨 -->
       </div>
